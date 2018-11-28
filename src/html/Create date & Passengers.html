@@ -22,49 +22,55 @@
 
 
 <style>
-.center{
-    max-width: 600px;
+
+
+.centerDate1{
+    max-width: 270px;
     margin: auto;
     font-family: Assistant;
     }
-</style>
 
-
-<!-- For allignment of first date picker and second paragraph-->
-<style>
-.center2{
-    max-width: 595px;
+.centerDate2{
+    max-width: 210px;
     margin: auto;
     font-family: Assistant;
     }
-</style>
 
-<!-- For allignment of first date picker and second paragraph-->
-<style>
-.center3{
-    max-width: 535px;
+.centerAdults{
+    max-width: 165px;
     margin: auto;
     font-family: Assistant;
     }
-</style>
 
-<!-- For allignment of adults ticker-->
-<style>
-.center4{
-    max-width: 575px;
+.centerChildren{
+    max-width: 190px;
     margin: auto;
     font-family: Assistant;
     }
-</style>
 
+    #inner {
+       max-width: 600px;
+       margin: auto;
+       font-family: Assistant;
+       }
 
-<!-- For allignment of children ticker-->
-<style>
-.center5{
-    max-width: 600px;
-    margin: auto;
-    font-family: Assistant;
-    }
+     #inner-middle{
+        max-width: 100px;
+        margin: auto;
+     }
+
+      .container {
+          position: relative;
+          text-align: center;
+          color:#A9A9A9;
+      }
+
+     .bottom-left {
+         position: absolute;
+         bottom: 8px;
+         left: 16px;
+     }
+
 </style>
 
 
@@ -74,10 +80,8 @@
         <h1 style="color:#548417; font-family:Assistant; font-size:60px"> Clim∞</h1>
     </div>
 
-    <div class = "center">
-        <p style="font-size:30px">
-            Step 2. Choose a date...
-        </p>
+    <div id="inner-middle">
+        <p><img src="./Picture/step2.png" alt="step2" width="200" height="50"> </p>
     </div>
 
     <div>
@@ -90,7 +94,19 @@
         </p>
     </div>
 
-    <div class = "center2">
+    <div id="inner" class="container">
+        <p style="font-size:30px">
+            Step 2. Choose a date...
+        </p>
+    </div>
+
+    <div>
+        <h1>
+
+        </h1>
+    </div>
+
+    <div class = "centerDate1">
         <label for="start">Departure date:</label>
 
         <input type="date" id="start" name="trip-start"
@@ -98,7 +114,7 @@
                min="2018-01-01" max="2020-12-31">
     </div>
 
-    <div class = "center3">
+    <div class = "centerDate2">
         <label for="start">Returning:</label>
 
         <input type="date" id="start" name="return-start"
@@ -112,24 +128,24 @@
         </h1>
     </div>
 
-    <div class = "center">
+    <div id="inner" class="container">
         <p style="font-size:30px">
             ...and number of passengers
         </p>
     </div>
 
-    <div class="center4">
+    <div class="centerAdults">
         <label for="Adults">Adults:</label>
 
         <input type="number" id="Adults" name="Adults:"
-               min="0" max="100" value="1">
+               min="0" max="100" value="0">
     </div>
 
-    <div class="center5">
+    <div class="centerChildren">
         <label for="Children">Children:</label>
 
         <input type="number" id="Children" name="Children:"
-               min="0" max="100" value="1">
+               min="0" max="100" value="0">
     </div>
 
     <div>
@@ -138,7 +154,7 @@
         </h1>
     </div>
 
-    <div style = "max-width:350px; margin:auto; font-family: Assistant;">
+    <div id="inner" class="container">
             <button type="button" class="btn btn-success">NEXT</button>
     </div>
 
