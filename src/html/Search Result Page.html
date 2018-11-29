@@ -86,7 +86,7 @@
     <div>
         <ul class="list-group">
             <li class="list-group-item"><p><img src="./Picture/SkiingRes1.png" alt="step2" width="1100" height="300">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#rommeModal">
                     Read more
                 </button> </p>
 
@@ -111,9 +111,7 @@
 
     <!-- Modal for choosing trip (duplicate for other buttons and change id on modal and data-target in button) -->
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="rommeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -122,25 +120,84 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-
                 <div class="modal-body">
                     <div>
                         <p><img src="./Picture/DestDetailed.png" alt="step2" width="850" height="400"> </p>
 
                                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                            <button type="button" class="btn btn-success" style="position:400px">CAR🚗</button>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#carRommeModal">
+                                CAR🚗
+                            </button>
                                 &emsp;&emsp;&emsp;&emsp;
-                            <button type="button" class="btn btn-success" style="position:200px">TRAIN🚂</button>
+                            <button type="button" class="btn btn-success">
+                                TRAIN🚂
+                            </button>
                                 &emsp;&emsp;&emsp;&emsp;
-                            <button type="button" class="btn btn-success" style="position:100px">BUS🚌</button>
-
+                            <button type="button" class="btn btn-success">
+                                BUS🚌
+                            </button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
+
+    <!-- Modal after choosing vehicle -->
+
+    <div class="modal fade bd-example-modal-lg" id="carRommeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Confirm choice of transportation:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p><img src="./Picture/ConfirmCar.png" alt="step2" width="850" height="330"> </p>
+
+                        <div class="form-check centreCar" style="position:400px">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                I want to reduce my carbon footprint by CO2 offset!🌱
+                            </label>
+                        </div>
+
+                        <br>
+
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;
+                            <button type="button" class="btn btn-success">SIGN IN</button>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;
+                            <button type="button" class="btn btn-success">LET'S GO!</button>
+                        </p>
+
+                        <p style="font-size:10px">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            By signing in you will register your trip to your climate plan.
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            You will be redirected to book your transportation
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
