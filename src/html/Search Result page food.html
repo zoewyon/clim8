@@ -1,10 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="d-none">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Clim8</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 </head>
 <body>
+
+<section id="main-tab" class="mt-3 container"></section>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/custom/index.js"></script>
+
+<script type="application/javascript">
+    window.base.mainController.initOnLoad();
+
+</script>
+
+<style>
+
+    #inner {
+       max-width: 600px;
+       margin: auto;
+       font-family: Assistant;
+       }
+
+     #inner-middle{
+        max-width: 100px;
+        margin: auto;
+     }
+
+      .container {
+          position: relative;
+          text-align: center;
+          color:#A9A9A9;
+      }
+    .centreCar {
+      position: 400px;
+      }
+
+
+
+</style>
+
+<div>
+
+    <div >
+        <h1 style="color:#548417; font-family:Assistant; font-size:60px"> Clim∞</h1>
+    </div>
+
+    <div id="inner-middle">
+        <p><img src="./Picture/step3.png" alt="step2" width="200" height="50"> </p>
+    </div>
+
+    <div>
+        <p>
+            <button type="button" class="btn btn-success">MY PROFILE</button>
+        </p>
+
+        <p>
+            <button type="button" class="btn btn-success"><a href="http://localhost:63342/clim8/src/html/About.html?_ijt=oead343grn7hviu0hi2ptupqgb"
+                                                             style="color:inherit">
+                ABOUT</a></button>
+        </p>
+    </div>
+
+    <div id="inner" class="container">
+        <p style="font-size:30px">
+            Step 3. Choose your destination...
+        </p>
+    </div>
+
+    <div style="text-align:center">
+        <p style="font-family: Assistant;">
+            As a rule of thumb, the closer you travel the better for the environment.
+            If you want to travel further, <br> make sure you choose an environmental friendly way of transportation.
+        </p>
+    </div>
+
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item"><p><img src="./Picture/SkiingRes1.png" alt="step2" width="1100" height="300">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#rommeModal">
+                    Read more
+                </button> </p>
+
+            </li>
+
+            <li class="list-group-item"><p><img src="./Picture/SkiingRes2.png" alt="step2" width="1100" height="300">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Read more
+                </button> </p>
+
+            <li class="list-group-item"><p><img src="./Picture/SkiingRes3.png" alt="step2" width="1100" height="300">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Read more
+                </button> </p></li>
+
+            <li class="list-group-item"><p><img src="./Picture/SkiingRes4.png" alt="step2" width="1100" height="300">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Read more
+                </button> </p></li>
+        </ul>
+    </div>
+
+    <!-- Modal for choosing trip (duplicate for other buttons and change id on modal and data-target in button) -->
+
+    <div class="modal fade bd-example-modal-lg" id="rommeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Choose transportation to destination:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p><img src="./Picture/DestDetailed.png" alt="step2" width="850" height="400"> </p>
+
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#carRommeModal">
+                            CAR🚗
+                        </button>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <button type="button" class="btn btn-success">
+                            TRAIN🚂
+                        </button>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <button type="button" class="btn btn-success">
+                            BUS🚌
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal after choosing vehicle -->
+
+    <div class="modal fade bd-example-modal-lg" id="carRommeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Confirm choice of transportation:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p><img src="./Picture/ConfirmCar.png" alt="step2" width="850" height="330"> </p>
+
+                        <div class="form-check centreCar" style="position:400px">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                I want to reduce my carbon footprint by CO2 offset!🌱
+                            </label>
+                        </div>
+
+                        <br>
+
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;
+                            <button type="button" class="btn btn-success">
+                                SIGN IN
+                            </button>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;
+                            <button type="button" class="btn btn-success">
+                                <a href="https://www.rentalcars.com/SearchResults.do?country=Sverige&doYear=2018&doFiltering=true&fromLocChoose=true&filterTo=49&dropLocationName=Stockholm&ftsType=C&longitude=18.0652&ftsLocationSearch=19071&dropFtsSearch=L&doDay=22&searchType=allareasgeosearch&filterFrom=0&puMonth=12&dropFtsInput=stockholm&dropCountry=Sverige&dropLongitude=18.0652&puDay=12&dropFtsLocationSearch=19071&puHour=10&dropFtsEntry=1000960313&enabler=&distance=10&ftsEntry=1000960313&city=Stockholm&latitude=59.3324&driverage=on&dropCity=Stockholm&dropFtsType=C&ftsAutocomplete=Stockholm%2c+Stockholms+län%2c+Sverige&driversAge=30&dropFtsAutocomplete=Stockholm%2c+Stockholms+län%2c+Sverige&dropFtsLocationName=Stockholm&dropCountryCode=&doMinute=0&countryCode=&puYear=2018&locationName=&puMinute=0&ftsInput=stockholm&coordinates=59.3324%2c18.0652&dropLocation=19071&doHour=10&dropLatitude=59.3324&dropCoordinates=59.3324%2c18.0652&ftsLocationName=Stockholm&ftsSearch=L&location=19071&doMonth=12&filterName=CarCategorisationSupplierFilter" style="color:inherit" target="_blank">
+                                    LET'S GO!
+                                </a>
+                            </button>
+                        </p>
+
+                        <p style="font-size:10px">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            By signing in you will register your trip to your climate plan.
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            You will be redirected to book your transportation
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
 
 </body>
 </html>
